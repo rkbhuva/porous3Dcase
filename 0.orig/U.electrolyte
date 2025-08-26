@@ -22,7 +22,9 @@ boundaryField
 {
     inlet
     {
-        type               zeroGradient;
+        type               pressureInletOutletVelocity;
+        phi                phi.electrolyte;
+        value              $internalField;
     }
 
     outlet
